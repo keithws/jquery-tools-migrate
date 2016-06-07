@@ -1,0 +1,33 @@
+{
+  "name": "jquery-tools-migrate",
+  "version": "1.0.0",
+  "description": "migrate away from jQuery Tools with console messages and stack traces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithws/jquery-tools-migrate.git"
+  },
+  "keywords": [
+    "tabs",
+    "tooltip",
+    "overlay",
+    "scrollable",
+    "validator",
+    "rangeinput",
+    "dateinput",
+    "mask",
+    "expose",
+    "flashembed",
+    "history",
+    "mousewheel"
+  ],
+  "author": "Keith W. Shaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keithws/jquery-tools-migrate/issues"
+  },
+  "homepage": "https://github.com/keithws/jquery-tools-migrate#readme"
+}
