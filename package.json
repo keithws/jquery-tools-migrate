@@ -4,7 +4,12 @@
   "description": "migrate away from jQuery Tools with console messages and stack traces",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "uglifyjs $npm_package_main --compress --mangle --output $npm_package_name-$npm_package_version.min.js",
+    "lint": "eslint $npm_package_main",
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,5 +34,9 @@
   "bugs": {
     "url": "https://github.com/keithws/jquery-tools-migrate/issues"
   },
-  "homepage": "https://github.com/keithws/jquery-tools-migrate#readme"
+  "homepage": "https://github.com/keithws/jquery-tools-migrate#readme",
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "uglify-js": "^2.6.2"
+  }
 }
