@@ -1,8 +1,9 @@
-/*
+/**
  * jQuery Tools Migrate - v1.0.0 - 2016-06-07
  * https://github.com/keithws/jquery-tools-migrate
  * Inspired by jQuery Migrate and adapted to jQuery Tools
- * Copyright 2016 Keith W. Shaw; Licensed MIT
+ * @author Keith W. Shaw <keith.w.shaw@gmail.com>
+ * @license MIT
  */
 (function jQueryToolsMigrate (jQuery) {
 
