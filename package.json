@@ -4,7 +4,7 @@
   "description": "migrate away from jQuery Tools with console messages and stack traces",
   "main": "index.js",
   "scripts": {
-    "build": "uglifyjs $npm_package_main --comments --compress --mangle --output $npm_package_name-$npm_package_version.min.js",
+    "build": "mkdir -p dist ; uglifyjs $npm_package_main --comments --compress --mangle --output dist/$npm_package_name.min.js",
     "lint": "eslint $npm_package_main",
     "test": "echo \"Warning: no test specified\" && exit 0",
     "pretest": "npm run lint",
