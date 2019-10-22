@@ -41,11 +41,11 @@
 
     };
 
-	/**
-	 * helper function to log messages and trace
-	 * @param {String} msg The message
-	 * @return {undefined} undefined
-	 */
+    /**
+     * helper function to log messages and trace
+     * @param {String} msg The message
+     * @return {undefined} undefined
+     */
     function migrateWarn (msg) {
 
         if (!warnedAbout[msg]) {
