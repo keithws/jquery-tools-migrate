@@ -6,10 +6,10 @@
   "scripts": {
     "build": "mkdir -p dist ; uglifyjs $npm_package_main --comments --compress --mangle --output dist/$npm_package_name.min.js",
     "lint": "eslint $npm_package_main",
-    "test": "echo \"Warning: no test specified\" && exit 0",
-    "pretest": "npm run lint",
     "prebuild": "npm run test",
-    "prepublish": "npm run build"
+    "prepare": "npm run build",
+    "pretest": "npm run lint",
+    "test": "echo \"Warning: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/keithws/jquery-tools-migrate#readme",
   "devDependencies": {
-    "eslint": "^2.11.1",
-    "uglify-js": "^2.6.2"
+    "eslint": "^6.5.1",
+    "uglify-js": "^3.6.3"
   }
 }
